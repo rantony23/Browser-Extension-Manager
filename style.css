@@ -1,0 +1,269 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: var(--font-family);
+    background-color: #040918;
+    color: var(--neutral-0);
+    width: 100vw;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction:column;
+    margin: 2rem 0;
+    min-height: 100vh;
+    transition: background-color 0.5s ease-in-out;
+}
+body.light{
+    background-color: #EBF2FC;
+    color: var(--neutral-900);
+}
+header{
+    display: block;
+    width: 80%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    background: var(--neutral-800);
+    border-radius: 10px;
+    align-items: center;
+    padding: 0 10px;
+    transition: background-color 0.5s ease-in-out;
+}
+header.light{
+    background-color: var(--neutral-0);
+}
+#button-toggle-mode{
+    background-color: var(--neutral-700);
+    height: 2rem;
+    width: 2rem;
+    border-radius:5px;
+    border: 1px hsl(200, 60%, 99%, 0.1) solid ;
+    cursor: pointer;
+}
+.div-logo img{
+    height: 2rem;
+    cursor: pointer;
+}
+.ext.light{
+    background-color: var(--neutral-0);
+    color: var(--neutral-800);
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+}
+.extension-list{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 3rem;
+    height: 3rem;
+    margin-bottom: 1rem;
+}
+.left{
+    margin-left: auto;
+}
+.left button{
+    color: var(--neutral-0);
+    border: 1px hsl(200, 60%, 99%, 0.1) solid ;
+    background-color: var(--neutral-800);
+    border-radius: 20px;
+    height: 2rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.left button:hover{
+    background-color: var(--red-400);
+    color: var(--neutral-0);
+}
+.all{
+    width: 3rem;
+}
+.used{
+    width: 4rem;
+}
+.inactive{
+    width: 5rem;
+}
+.elements-ext-list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 1rem;
+}
+.elements-ext-list > div{
+    background-color: var(--neutral-800);
+    border-radius: 10px;
+    height: 12rem;
+    display: grid;
+    grid-template-columns: 20% 70%;
+    grid-template-rows: 50% 50%;
+    padding: 0 1rem;
+    align-items: center;
+    border: 1px hsl(200, 60%, 99%, 0.11) solid ;
+    transition:  background-color 0.5s ease-in-out;
+}
+
+.elements-ext-list > div.light{
+    background-color: var(--neutral-0);
+}
+.elements-ext-list > div > img{
+    display: block;
+}
+.elements-ext-list > div > div{
+    display: flex;
+    flex-wrap: wrap;
+}
+.elements-ext-list > div > div > h2{
+    font-size: 1.5rem;
+}
+.elements-ext-list > div > div > p{
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--neutral-500);
+}
+.elements-ext-list > div > button{
+    width: 5em;
+    height:2rem;
+    border-radius: 20px;
+    background-color: var(--neutral-700);
+    border: 1px hsl(200, 60%, 99%, 0.1) solid ;
+    color: var(--neutral-0);
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: 0.2s ease-in;
+}
+.elements-ext-list > div > button:hover{
+    background-color: var(--red-400);
+}
+.remove.light{
+    background-color: var(--neutral-100);
+    border: 1px hsl(226, 11%, 70%) solid ;
+    color: var(--neutral-700);
+}
+.elements-ext-list > div > .toggle-button{
+    background-color: var(--neutral-600);
+    display: block;
+    width: 2rem;
+    height: 1rem;
+    border-radius: 20px;
+    justify-self: end;
+    position: relative;
+    cursor: pointer;
+    border: 1px hsl(226, 11%, 70%, 0.1) solid;
+}
+.elements-ext-list > div >.toggle-button.light{
+    background-color: var(--neutral-300);
+    border: 1px hsl(226, 11%, 37%, 0.1) solid;
+}
+.elements-ext-list > div > .toggle-button::before{
+    content: "";
+    width: 0.9rem;
+    height: 0.9rem;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    left: 0px;
+    transition: left 0.3s ease-in-out;
+}
+.elements-ext-list > div > .toggle-button.active::before {
+    left: 15px;
+}
+.elements-ext-list > div > .toggle-button.active{
+    background-color: var(--red-400);
+}
+
+@media (max-width: 600px){
+
+    .elements-ext-list{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+}
+.extension-list{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr;
+    flex-direction: row;
+    justify-items: center;
+    width: 100%;
+    margin-top: 3rem;
+    height: 7rem;
+    margin-bottom: 1rem;
+}
+.left{
+    margin-left: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 1rem;
+}
+.left button{
+    height: 3rem;
+    font-size: large;
+}
+.all{
+    width: 4rem;
+}
+.used{
+    width: 5.5rem;
+}
+.inactive{
+    width: 6.5rem;
+}
+header{
+    height: 4rem;
+}
+.div-logo img{
+    height: 2.7rem;
+}
+.button-toggle-mode{
+    height: 2.7rem;
+    width: 2.7rem;
+    border-radius: 12px;
+}
+.elements-ext-list > div{
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 65% 35%;
+}
+.elements-ext-list > div > div{
+    padding-left: 30px;
+}
+
+}
+@media (min-width:601px) and (max-width:1200px){
+    .elements-ext-list{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .elements-ext-list > div{
+        grid-template-columns: 20% 80%;
+        grid-template-rows: 75% 25%;
+    }
+    .elements-ext-list > div > div{
+        padding-left: 2rem;
+    }
+    .elements-ext-list > div > div >h2{
+        font-size: 1em;
+    }
+    .elements-ext-list > div > div > p{
+        font-size: 0.8em;
+    }
+}
+@media (min-width:1201px) and (max-width: 1400px){
+    section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+    }
+}

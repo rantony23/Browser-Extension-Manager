@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./root.css">
+    <title>Extension Manager</title>
+
+</head>
+<body>
+    <header id="nav">
+        <div class="div-logo">
+            <img id="logo-navbar" src="./browser-extensions-manager-ui-main/assets/images/logo.svg" alt="logo">
+        </div>
+        <button id="button-toggle-mode">
+            <img id="mode-button" src="./browser-extensions-manager-ui-main/assets/images/icon-sun.svg" alt="">
+        </button>
+    </header>
+
+    <section>
+
+        <div class="extension-list">
+            <h1>Extension List</h1>
+            <div class="left">
+                <button class="all ext">All</button>
+                <button class="used ext">Active</button>
+                <button class="inactive ext">Inactive</button>
+            </div>
+        </div>
+        <div class="elements-ext-list">
+
+            <div class="container-element">
+                <img src="./browser-extensions-manager-ui-main/assets/images/logo-devlens.svg" alt="DevLens">
+                <div>
+                    <h2>Devlens</h2>
+                    <p> Quickly inspect page layouts and visualize element boundaries.</p>
+                </div>
+                <button class="remove">Remove</button>
+                <div class="toggle-button"></div>
+            </div>
+            <div class="container-element">
+                <img src="./browser-extensions-manager-ui-main/assets/images/logo-style-spy.svg" alt="StyleSpy">
+                <div>
+                    <h2>StyleSpy</h2>
+                    <p> Instantly analyze and copy CSS from any webpage element.</p>
+                </div>
+                <button class="remove">Remove</button>
+                <div class="toggle-button"></div>
+            </div>
+            <div class="container-element">
+                <img src="./browser-extensions-manager-ui-main/assets/images/logo-speed-boost.svg" alt="SpeedBoost">
+                <div>
+                    <h2>SpeedBoost</h2>
+                    <p>Optimizes browser resources usage to accelerate page loading</p>
+                </div>
+                <button class="remove">Remove</button>
+                <div class="toggle-button"></div>
+            </div>
+            <div class="container-element">
+                <img src="./browser-extensions-manager-ui-main/assets/images/logo-json-wizard.svg" alt="JSONWizard">
+                <div>
+                    <h2>JSONWizard</h2>
+                    <p>Formats, validates, and prettifies JSON responses in-Browser.</p>
+                </div>
+                <button class="remove">Remove</button>
+                <div class="toggle-button"></div>
+            </div>
+            <div class="container-element">
+                <img src="./browser-extensions-manager-ui-main/assets/images/logo-tab-master-pro.svg" alt="TabMaster Pro">
+                <div>
+                    <h2>TabMaster Pro</h2>
+                    <p>Organizes browsers tabs into groups and sessions.</p>
+                </div>
+                <button class="remove">Remove</button>
+                <div class="toggle-button"></div>
+            </div>
+            <div class="container-element">
+                <img src="./browser-extensions-manager-ui-main/assets/images/logo-viewport-buddy.svg" alt="ViewportBuddy">
+                <div>
+                    <h2>ViewportBuddy</h2>
+                    <p>simulates various screen resolutions directly within the browser.</p>
+                </div>
+                <button class="remove">Remove</button>
+                <div class="toggle-button"></div>
+            </div>
+            <div class="container-element">
+                <img src="./browser-extensions-manager-ui-main/assets/images/logo-markup-notes.svg" alt="Markup Notes">
+                <div>
+                    <h2>Markup Notes</h2>
+                    <p>Enables annotation and notes directly onto webpages for collaborative debugging.</p>
+                </div>
+                <button class="remove">Remove</button>
+                <div class="toggle-button"></div>
+            </div>
+            <div class="container-element">
+                <img src="./browser-extensions-manager-ui-main/assets/images/logo-grid-guides.svg" alt="GridGuides">
+                <div>
+                    <h2>GridGuides</h2>
+                    <p>Overlay customizable grids and alignaments guides on any webpage</p>
+                </div>
+                <button class="remove">Remove</button>
+                <div class="toggle-button"></div>
+            </div>
+            <div class="container-element">
+                <img src="./browser-extensions-manager-ui-main/assets/images/logo-palette-picker.svg" alt="Palette Picker">
+                <div>
+                    <h2>Palette Picker</h2>
+                    <p>instly extracts color palettes from any webpage.</p>
+                </div>
+                <button class="remove">Remove</button>
+                <div class="toggle-button"></div>
+            </div>
+            <div class="container-element">
+                <img src="./browser-extensions-manager-ui-main/assets/images/logo-link-checker.svg" alt="LinkChecker">
+                <div>
+                    <h2>LinkChecker</h2>
+                    <p>scans and hightlights broken links on any page.</p>
+                </div>
+                <button class="remove">Remove</button>
+                <div class="toggle-button"></div>
+            </div>
+            <div class="container-element">
+                <img src="./browser-extensions-manager-ui-main/assets/images/logo-dom-snapshot.svg" alt="DOM Sanpshot">
+                <div>
+                    <h2>DOM Sanpshot</h2>
+                    <p>Capture and export DOM structures quickly.</p>
+                </div>
+                <button class="remove">Remove</button>
+                <div class="toggle-button">
+                    <div class="circle"></div>
+                </div>
+            </div>
+            <div class="container-element">
+                <img src="./browser-extensions-manager-ui-main/assets/images/logo-console-plus.svg" alt="ConsolePlus">
+                <div>
+                    <h2>ConsolePlus</h2>
+                    <p>Enhanced developer console with advanced filtering and logging.</p>
+                </div>
+                <button class="remove">Remove</button>
+                <div class="toggle-button"></div>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="./index.js"></script>
+</html>
